@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000002;
+    color: #FAFAFA;
+    box-shadow: 2px 0px 7px rgba(0,0,0,0.85)
+}
+
+.logo{
+    display: flex;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.busqueda{
+    display: flex;
+    position: relative;
+}
+
+.busqueda input{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+.menus{
+    display: flex;
+
+}
+
+.menu-elemento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+}
+
+.menu-elemento span{
+    width: 30px;
+    height: 30px;
+    background: rgba(255,255,255,0.35);
+}
+
+.menu-elemento p{
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+}
