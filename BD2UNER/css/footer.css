@@ -44,3 +44,86 @@ footer h1{
     align-items: center;
 }
 
+.au-item{
+    box-sizing: border-box;
+    padding: 5px 0px;
+}
+
+.au-item li{
+    box-sizing: border-box;
+    padding: 5px 0px;
+}
+
+.otros-enlaces{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oe-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0px;
+}
+
+.oe-item a{
+    box-sizing: border-box;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0px;
+}
+
+.sm-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    text-indent: 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.sm-item:hover{
+    text-indent: 10px;
+    box-shadow: inset 40px 0px 2px rgba(255,255,255,0.95);
+}
+
+.sm-item:hover .icon-facebook2{
+    color: #1877f2;
+}
+
+.sm-item:hover .icon-instagram{
+    color: #d33086;
+}
+
+.sm-item:hover span{
+    color: #ff0000;
+}
+
+.sm-item span{
+    font-size: 20px;
+    transition: all 0.35s ease;
+}
+
+.sm-item p{
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
