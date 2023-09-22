@@ -1,0 +1,84 @@
+*{
+    font-size: 40px;
+}
+
+@font-face {
+    font-family: 'bakery';
+    src: url('../fonts/bakery.ttf');
+}
+
+@font-face {
+    font-family: 'ragna';
+    src: url('../fonts/Ragna.ttf');
+}
+
+@font-face {
+    font-family: 'starryNight';
+    src: url('../fonts/Starry\ Night.ttf');
+}
+
+@font-face {
+    font-family: 'choorseFun';
+    src: url('../fonts/Choorse\ Fun.otf');
+}
+
+@font-face {
+    font-family: 'magicHouse';
+    src: url('../fonts/Magic\ House.otf');
+}
+
+@font-face {
+    font-family: 'midlandLuxury';
+    src: url('../fonts/MidlandLuxury-Thin.otf');
+}
+
+@font-face {
+    font-family: 'mogesty';
+    src: url('../fonts/Mogesty-Regular.otf');
+}
+
+@font-face {
+    font-family: 'mystical';
+    src: url('../fonts/Mystical.otf');
+}
+
+@font-face {
+    font-family: 'tokyoRockstar';
+    src: url('../fonts/TokyoRockstar.ttf');
+}
+
+.bakery{
+    font-family: 'bakery';
+}
+
+.ragna{
+    font-family: 'ragna';
+}
+
+.starry{
+    font-family: 'starryNight';
+}
+
+.choorse{
+    font-family: 'choorseFun';
+}
+
+.magic{
+    font-family: 'magicHouse';
+}
+
+.midland{
+    font-family: 'midlandLuxury';
+}
+
+.mogesty{
+    font-family: 'mogesty';
+}
+
+.mystical{
+    font-family: 'mystical';
+}
+
+.tokyo{
+    font-family: 'tokyoRockstar';
+}
