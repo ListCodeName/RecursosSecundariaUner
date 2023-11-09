@@ -2,6 +2,7 @@
 // Inicia la sesión
 session_start();
 
+
 // Verifica si se ha enviado el formulario de inicio de sesión
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica las credenciales (esto es solo un ejemplo, debes validar y verificar las credenciales correctamente)
