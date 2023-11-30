@@ -1,0 +1,19 @@
+*** Utilice el codigo del archivo comida_vegana.sql para crear la base de datos en XAMPP:
+Abrir xampp, habilitar los servicios de Apache y MySql. Darle una vez iniciados a <Admin> de MySql y seguir los pasos.
+Paso 1: Crear una base de datos llamado comida_vegana
+Paso 2: Ir al menú SQL
+Paso 3: Copie todo el contenido de comida_vegana.sql y peguelo en la ventana de SQL de xampp
+Paso 4: Le dan continuar y debería crearse toda la estructura de las tablas 
+
+*** Escriba la sentencia SQL correcta para constestar los siguientes puntos.
+
+1- Seleccionar los productos que tienen “masa madre” en su nombre y son activos (LIKE)
+2- Seleccionar los productos con un precio superior a 100 y son “tapas” (LIKE)
+3- Seleccionar todos los productos excepto aquellos que son “skacks” (LIKE)
+4- Seleccionar los productos activos que tienen un precio entre 200 y 300 (Between)
+5- Seleccionar los productos activos con sus categorías sin repetir datos (alias e inner join)
+6- Seleccionar los productos con sus marcas sin repetir datos (alias e inner join)
+7- Seleccionar los productos inactivos con categorías y marcas sin repetir datos (alias e inner join)
+
+Trabajo práctico, máximo 2 personas.
+Para ayuda pueden visitar www.w3school > Apartado SQL
