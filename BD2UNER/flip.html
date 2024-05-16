@@ -9,6 +9,8 @@
         *{
             padding: 0px;
             margin: 0px;
+            box-sizing: border-box;
+            font-family: monospace;
         }
 
         body{
@@ -35,6 +37,7 @@
             position: absolute;
             transform-style: preserve-3d;
             transition: all 1s ease;
+            
         }
 
         .contenedor:hover .tarjeta{
@@ -46,8 +49,15 @@
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
-            background: red;
-            color: white;
+            background: #FAFAFA;
+            color: #137970;
+            border-radius: 5px;
+            border: 1px solid rgba(0,0,0,0.25);
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .dorso{
@@ -55,11 +65,93 @@
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
-            background: blue;
-            color: yellow;
+            background: #137970;
+            color: #FAFAFA;
             transform: rotateY(180deg);
+            border-radius: 5px;
+            border: 1px solid rgba(255,255,255,0.25);
+            overflow: hidden;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        .circle-top{
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            top: 0px;
+            right: 50%;
+            transform: translate(50%, -50%);
+            background: #137970;
+            border-radius: 50%;
+        }
+
+        .circle-bot{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            bottom: 0px;
+            right: 50%;
+            transform: translate(50%, 75%);
+            background: #FAFAFA;
+            border-radius: 50%;
+        }
+
+        .circle-top img{
+            position: absolute;
+            z-index: 10;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #137970;
+            box-shadow: 0px 2px 7px rgba(0,0,0,0.25);
+            bottom: 0px;
+            right: 50%;
+            border-radius: 50%;
+            transform: translate(50%, 40%);
+        }
+
+        .titulo-frente{
+            padding-top: 75px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+       .descripcion-dorso{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+       } 
+
+       .descripcion-dorso h1{
+            width: 75%;
+            border-top: 2px solid #FAFAFA;
+            border-bottom: 2px solid #FAFAFA;
+            padding: 2px;
+       }
+
+       .desc-opcion{
+            width: 75%;
+            margin-top: 15px;
+            padding: 5px 20%;
+            position: relative;
+            overflow: hidden;
+            
+       }
+
+       .desc-opcion:after{
+            content: "";
+            position: absolute;
+            left: -10%;
+            top: -50%;
+            width: 50px;
+            height: 50px;
+            background: #FAFAFA;
+            transform: rotate(45deg);
+       }
 
 
 
@@ -76,15 +168,42 @@
         <div class="tarjeta">
 
             <div class="frente">
-                Frente de la tarjeta
+                <div class="circle-top">
+                    <img src="img/foco.jpg" alt="">
+                </div>
+
+                <div class="titulo-frente">
+                    Nombre del programador
+                </div>
             </div>
 
             <div class="dorso">
-                Dorso de la tarjeta
+                <div class="circle-bot">
+                    <img src="" alt="">
+                </div>
+
+                <div class="descripcion-dorso">
+                    <h1>Skills</h1>
+                    <div class="desc-opcion">
+                        Java
+                    </div>
+                    <div class="desc-opcion">
+                        Python
+                    </div>
+                    <div class="desc-opcion">
+                        Javascript
+                    </div>
+                    <div class="desc-opcion">
+                        CSS
+                    </div>
+                    <div class="desc-opcion">
+                        PHP
+                    </div>
+                </div>
+                
             </div>
 
         </div>
-
     </div>
 
 </body>
