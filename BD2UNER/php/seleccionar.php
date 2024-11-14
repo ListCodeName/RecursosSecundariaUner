@@ -3,7 +3,7 @@
 $usuario = $_POST['user'];
 $contrasenia = $_POST['pass'];
 
-// Insertar datos en la base de datos
+// Seleccionar datos en la base de datos
 $sql = "SELECT * FROM usuario WHERE username = '$usuario' AND password = '$contrasenia'";
 $result = $conn->query($sql);
 
@@ -12,7 +12,13 @@ if ($result) {
     // Obtener los resultados
     while ($row = $result->fetch_assoc()) {
         // Procesar cada fila de resultados
-        echo "Bienvenido: " . $row['nombre'] . "<br>";
+        $_SESSION['nombre'] = $row['nombre'];
+        $_SESSION['apellido'] = $row['apellido'];
+        $_SESSION['email'] = $row['email'];
+        //$_SESSION['']
+        //$_SESSION['']
+
+        header("Location: ../index.php");
     }
 } else {
     echo "Error en la consulta: " . $conn->error;

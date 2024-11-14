@@ -9,6 +9,15 @@
 </head>
 <body>
 
+<?php
+    session_start(); // Inicia la sesión
+
+    // Verifica si el usuario ya está logueado
+    if (isset($_SESSION['username'])) {
+        echo "Hola, " . $_SESSION['username'];
+    }
+?>
+
     <span class="icon-key" id="open-login"></span>
 
 

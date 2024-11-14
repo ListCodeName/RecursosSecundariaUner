@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "bd2uner";
+$database = "tiendanube";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $database);
