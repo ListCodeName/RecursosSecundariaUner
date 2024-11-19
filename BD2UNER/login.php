@@ -12,10 +12,15 @@
 <?php
     session_start(); // Inicia la sesión
 
-    // Verifica si el usuario ya está logueado
-    if (isset($_SESSION['username'])) {
-        echo "Hola, " . $_SESSION['username'];
+    if(isset($_SESSION['status'])){
+        echo $_SESSION['status'];
     }
+
+
+    // Verifica si el usuario ya está logueado
+    //if (isset($_SESSION['username'])) {
+    //    echo "Hola, " . $_SESSION['username'];
+    //}
 ?>
 
     <span class="icon-key" id="open-login"></span>
@@ -26,7 +31,7 @@
         <span class="icon-cross" id="close-login"></span>
         <span class="icon-loop2" id="switch"></span>
         
-        <form action="#" method="post" id="login">
+        <form action="php/seleccionar.php" method="post" id="login">
             
             
             <div class="login-header">
